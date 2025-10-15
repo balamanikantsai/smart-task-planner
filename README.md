@@ -1,11 +1,13 @@
-## Demo Video
+## 🎬 Demo Video
 
-Watch the project demo:
+### Watch the Full Demo
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](./Bala%20Manikanta%20Sai%20Video.mp4)
+> **Note**: To view the video directly on GitHub, click "Edit this file" (pencil icon) on GitHub, then drag and drop the `Bala Manikanta Sai Video.mp4` file into the markdown editor. GitHub will automatically upload and embed it.
 
-If the video does not play in your browser, download it directly: [Bala Manikanta Sai Video.mp4](./Bala%20Manikanta%20Sai%20Video.mp4)
-## 🎬 Demo
+**For now, download and watch:**
+📥 [Download Demo Video - Bala Manikanta Sai Video.mp4](https://github.com/balamanikantsai/smart-task-planner/raw/main/Bala%20Manikanta%20Sai%20Video.mp4)
+
+### Quick Demo Preview
 
 ### Example Input
 ```
