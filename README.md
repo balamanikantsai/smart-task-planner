@@ -1,3 +1,21 @@
+## Demo Video
+
+Watch the project demo:
+
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](./Bala%20Manikanta%20Sai%20Video.mp4)
+
+If the video does not play in your browser, download it directly: [Bala Manikanta Sai Video.mp4](./Bala%20Manikanta%20Sai%20Video.mp4)
+## 🎬 Demo
+
+### Example Input
+```
+Goal: "Launch a mobile app in 2 weeks"
+Deadline: 2025-10-29
+```
+
+### Example Output
+The AI generates:
+...
 # Smart Task Planner 🚀
 
 An AI-powered task planning application that breaks down user goals into actionable tasks with timelines using Gemini AI reasoning.
