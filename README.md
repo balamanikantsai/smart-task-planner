@@ -8,7 +8,11 @@
 
 ### Watch the Full Demo
 
-> **Note**: To view the video directly on GitHub, click "Edit this file" (pencil icon) on GitHub, then drag and drop the `Bala Manikanta Sai Video.mp4` file into the markdown editor. GitHub will automatically upload and embed it.
+
+https://github.com/user-attachments/assets/07a9df3f-3a27-4cc7-bedd-a6ac15af050e
+
+
+
 
 **For now, download and watch:**
 📥 [Download Demo Video - Bala Manikanta Sai Video.mp4](https://github.com/balamanikantsai/smart-task-planner/raw/main/Bala%20Manikanta%20Sai%20Video.mp4)
@@ -454,7 +458,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Project Link: [https://github.com/yourusername/smart-task-planner](https://github.com/yourusername/smart-task-planner)
+Project Link: [https://github.com/balamanikantsai/smart-task-planner](https://github.com/balamanikantsai/smart-task-planner)
 
 ---
 
