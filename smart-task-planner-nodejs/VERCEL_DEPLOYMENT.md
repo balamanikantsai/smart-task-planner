@@ -57,7 +57,7 @@ vercel env add GEMINI_API_KEY
 
 **Enter values:**
 - Environment: **Production**
-- Value: **AIzaSyDYbHIB9ilygu2Iux1MFTzDXROtGbMzXN0** (your API key)
+- Value: **AIzaSy******************** (your API key)
 
 ### Step 6: Redeploy with Environment Variable
 
