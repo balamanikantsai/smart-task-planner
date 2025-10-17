@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Planner - AI-Powered Goal Breakdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-brain"></i> Smart Task Planner</h1>
+                <p class="subtitle">Break down your goals into actionable tasks with AI reasoning</p>
+            </div>
+            <div class="status-indicator">
+                <span id="apiStatus" class="status-badge">Checking...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Goal Input Section -->
+            <section class="input-section card">
+                <h2><i class="fas fa-bullseye"></i> What's Your Goal?</h2>
+                
+                <div class="input-group">
+                    <label for="goalInput">Describe your goal in detail:</label>
+                    <textarea 
+                        id="goalInput" 
+                        placeholder="E.g., Launch a mobile app in 2 weeks, Organize a conference, Write a book..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="deadlineInput">Target Deadline (Optional):</label>
+                    <input type="date" id="deadlineInput" />
+                </div>
+
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> Generate Task Plan
+                    </button>
+                    <button id="examplesBtn" class="btn btn-secondary">
+                        <i class="fas fa-lightbulb"></i> Show Examples
+                    </button>
+                    <button id="historyBtn" class="btn btn-secondary">
+                        <i class="fas fa-history"></i> View History
+                    </button>
+                </div>
+
+                <div id="loadingIndicator" class="loading-indicator hidden">
+                    <div class="spinner"></div>
+                    <p>AI is analyzing your goal and generating a detailed plan...</p>
+                </div>
+            </section>
+
+            <!-- Examples Modal -->
+            <div id="examplesModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3><i class="fas fa-lightbulb"></i> Example Goals</h3>
+                        <button class="close-modal" onclick="closeExamplesModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="examplesList" class="examples-list">
+                        <!-- Examples will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- Analysis Card -->
+                <div class="card analysis-card">
+                    <h3><i class="fas fa-chart-line"></i> Goal Analysis</h3>
+                    <div id="analysisContent" class="analysis-content"></div>
+                </div>
+
+                <!-- Tasks Timeline -->
+                <div class="card tasks-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-tasks"></i> Task Breakdown</h3>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="timeline">
+                                <i class="fas fa-stream"></i> Timeline
+                            </button>
+                            <button class="toggle-btn" data-view="kanban">
+                                <i class="fas fa-columns"></i> Kanban
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="tasksContent" class="tasks-content">
+                        <!-- Tasks will be rendered here -->
+                    </div>
+                </div>
+
+                <!-- Timeline & Risks Row -->
+                <div class="info-row">
+                    <div class="card timeline-card">
+                        <h3><i class="fas fa-calendar-alt"></i> Project Timeline</h3>
+                        <div id="timelineContent" class="timeline-content"></div>
+                    </div>
+
+                    <div class="card risks-card">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Risk Factors</h3>
+                        <div id="risksContent" class="risks-content"></div>
+                    </div>
+                </div>
+
+                <!-- Success Metrics -->
+                <div class="card metrics-card">
+                    <h3><i class="fas fa-trophy"></i> Success Metrics</h3>
+                    <div id="metricsContent" class="metrics-content"></div>
+                </div>
+
+                <!-- Export Options -->
+                <div class="export-section">
+                    <button class="btn btn-outline" onclick="exportToJSON()">
+                        <i class="fas fa-download"></i> Export as JSON
+                    </button>
+                    <button class="btn btn-outline" onclick="exportToCSV()">
+                        <i class="fas fa-file-csv"></i> Export as CSV
+                    </button>
+                    <button class="btn btn-outline" onclick="printPlan()">
+                        <i class="fas fa-print"></i> Print Plan
+                    </button>
+                </div>
+            </section>
+
+            <!-- Error Display -->
+            <div id="errorDisplay" class="error-message hidden"></div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by <strong>Gemini AI</strong> + <strong>Node.js</strong> + <strong>LangChain</strong></p>
+            <p class="footer-links">
+                <a href="https://github.com/balamanikantsai/smart-task-planner" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" onclick="showAbout()"><i class="fas fa-info-circle"></i> About</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
