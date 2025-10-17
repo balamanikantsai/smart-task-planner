@@ -1,4 +1,10 @@
-## 🎬 Demo Video
+## � Live Demo
+
+**🚀 Try it live:** [https://smart-task-planner.onrender.com](https://smart-task-planner.onrender.com) *(Update this URL after deployment)*
+
+> **Note:** First load may take 30-60 seconds (Render free tier cold start)
+
+## �🎬 Demo Video
 
 ### Watch the Full Demo
 
