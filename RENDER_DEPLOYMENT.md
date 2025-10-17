@@ -64,7 +64,7 @@ This guide will help you deploy the Smart Task Planner to Render using your GitH
    - Scroll to **"Environment Variables"**
    - Click **"Add Environment Variable"**
    - Key: `GEMINI_API_KEY`
-   - Value: `AIzaSyDYbHIB9ilygu2Iux1MFTzDXROtGbMzXN0` (your actual key)
+   - Value: `AIzaS*******************` (your actual key)
    - Click **"Add"**
 
 6. **Deploy**
